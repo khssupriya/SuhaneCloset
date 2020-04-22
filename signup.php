@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-
 <?php
 
 $servername = "fdb25.awardspace.net";
@@ -25,10 +21,15 @@ $pass = $_POST['pass'];
 $sql = "INSERT INTO users (fname, lname, phone, email, pass) VALUES ('$fname', '$lname', '$phone', '$email', '$pass');";
 $result = mysqli_query($conn, $sql);
 
-header("location:index.php?signup=success");
+$sql = "SELECT if FROM users WHERE email = $email";
+$rid = mysqli_query($conn, $sql);
+
+session_start();
+
+$_SESSION['userid'] = $rid;
+echo"<script type=\"text/javascript\">
+window.location.href = 'http://suhanescloset.atwebpages.com/PHP/index.php';
+</script>" ;
 
 mysqli_close($conn);
 ?>
-
-</body>
-</html>
