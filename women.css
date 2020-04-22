@@ -1,0 +1,33 @@
+.sidenav {
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 250px;
+  left: 10px;
+  background: #061d30;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  font-size: 30px;
+  font-family: Marck Script;
+  color: grey;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+.sidenav a:active {
+  color: white;
+}
+
+.main {
+  margin-left: 250px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

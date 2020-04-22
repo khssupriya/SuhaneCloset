@@ -1,0 +1,178 @@
+  
+/* ------ Navigation Menu Begins ------- */
+
+#NavMenu ul {
+    list-style-type: none;
+    margin :10px;
+    border: 10px;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  #NavMenu li a {
+    display: block;
+    color: black;
+    text-align: center;
+    margin: 50px; 
+    text-decoration: none;
+  }
+  
+  #title li {
+      float: left;
+  }
+  
+  #title li a{
+    display: block;
+    color: black;
+    text-align: center;
+    margin: 50px; 
+    margin-top:25px; 
+    text-decoration: none;
+    font-size: 40px;
+    font-family: Pacifico;
+  }
+  
+  #NavLinks li { 
+      float: right;
+  }
+  
+  #NavLinks li a:hover{
+    border-bottom: 2px solid black;
+  }
+  
+  /* ------ Navigation Menu Ends ------- */
+  
+  /* ------- Footer Icons Begins -------- */
+  
+  #FooterIcons{
+      position: absolute;
+  }
+  
+  #FooterIcons ul {
+    list-style-type: none;
+    margin :10px;
+    border: 10px;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  #FooterIcons li a{
+      text-decoration: none;
+      font-size: 40px;
+      margin: 20px;
+  }
+  
+  #FooterIcons li {
+      float: left;
+  }
+  
+  /* ------- Footer Icons Ends --------- */
+  
+  footer{
+      background-color: #061d30;
+      color:white; 
+      padding-top: 5px;
+      padding-bottom: 5px; 
+  }
+  
+  body{
+      margin : 0;
+      font-family: Roboto;
+  } 
+
+  /*........main page........*/
+  .logo{
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+  .logo1{
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    font-family: cursive;
+    font-size: xx-large;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    font-size: xx-large;
+    font-family: cursive;
+    color: black;
+  }
+
+  .row{
+    float: left;
+    width: 25%;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    font-size: medium;
+    font-family: cursive;
+    color: black;
+  }
+
+  
+  /*..........about page..........*/
+  .about{
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+  .abt1{
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    font-family: cursive;
+    font-size: xx-large;
+  }
+
+  .abt2{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-family: cursive;
+    font-size: xx-large;
+  }
+
+  .info{
+    background-color: blanchedalmond;
+    width: 100%;
+    border: black;
+    padding: 50px;
+    margin: 20px;
+    font-size: xx-large;
+    font-family: cursive;
+  }
+
+  .quality{
+    background-color: blanchedalmond;
+    width: 100%;
+    border: black;
+    padding: 50px;
+    margin: 20px;
+    font-size: xx-large;
+    font-family: cursive;
+  }
+
+  /*--------contact page---------*/
+  .cont1{
+    width: 100%;
+    border: black;
+    padding: 50px;
+    margin: 5px;
+    font-size: xx-large;
+    font-family: cursive;
+  }
+
+  .cont2{
+    width: 100%;
+    border: black;
+    padding: 50px;
+    margin: 5px;
+    font-size: xx-large;
+    font-family: cursive;
+  }
