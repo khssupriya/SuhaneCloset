@@ -1,3 +1,6 @@
+<?php
+        session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +19,7 @@
 
 	<!-- -------- NavMenu Begins --------->
 
-	<div id = "NavMenu">
+		<div id = "NavMenu">
 		<ul>
 			<span id = "title">
 				<li><a href="index.php">Suhane's Closet</a></li>				
@@ -56,7 +59,7 @@
     
     <div class="logo">
         <img src="/Images/main.jpg" style="width: 100%;" style="height: 100%;">
-    <h1 class="logo1"  align="center">SIMPLICITY IS THE KEYNOTE OF <br>ALL TRUE ALLIGIENCE</h1>
+    <h1 class="logo1"  align="center" style="font-family:'Pacifico'">Simplicity is the keynote of <br>All True Alligence</h1>
     </div>
     <br>
     <hr>
@@ -178,6 +181,29 @@
 	  <p>Customer Service Contact : <a href="mailto:customercare@Suhanescloset.com">customercare@Suhanescloset.com</a></p>
 	  <p>Suhane's Closet 2020. All Rights Reserved ®</p>
 	</footer>
+        
+        <!-----------SCRIPT FOR MODAL --------->
+
+	<script type="text/javascript">
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		//var btn = document.getElementById("orderlinkbutn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		cart.onclick = function() {
+		  modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
 
     
 </body>
