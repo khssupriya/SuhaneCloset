@@ -22,6 +22,7 @@ $des = $row['des'];
 $name = $row['nam'];
 $id = $row['id'];
 
+
 mysqli_close($conn);
 
 ?>
@@ -39,11 +40,19 @@ mysqli_close($conn);
 	<link rel="stylesheet" type="text/css" href="../CSS/showstyle.css">
 
 	<title>Suhane's Closet</title>
+        
+        <style>
+        img{
+        height:400px;
+        width:267px;
+        
+        }
+        </style>
 </head>
 <body>
 	<!-- -------- NavMenu Begins --------->
 
-	<div id = "NavMenu">
+		<div id = "NavMenu">
 		<ul>
 			<span id = "title">
 				<li><a href="index.php">Suhane's Closet</a></li>				
@@ -72,8 +81,8 @@ mysqli_close($conn);
 					}
 
 				?>
-				<li><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="about.php">About</a></li>
+				<li><a href="contact.php">Contact</a></li>
 				<li><a href="index.php">Home</a></li>				
 			</span>
 		</ul>
@@ -81,9 +90,10 @@ mysqli_close($conn);
 
 	<!-- -------- NavMenu ENDS --------->
 
+
 	<table align="center" id="maintable">
 		<tr>
-			<td><?php echo '<img src='.$img.'height:"400" width:"267">'?>
+			<td><?php echo '<img src='.$img.'>'?>
 			</td>
 			<td id ="content" colspan="2">
 				<table>
@@ -94,9 +104,8 @@ mysqli_close($conn);
 						<td id="prprice"><?php echo "$".$price; ?><br></td>
 					</tr>
 					<tr>
-						<td><form action="../PHP/addtocart.php" method="post">
-						    	<button id="cartbtn">Add to Cart</button>	    	
-						    </form>	
+						<td>
+						    	<button id="cartbtn">Add to Cart</button>
 						</td>
 					</tr>
 					<tr>
