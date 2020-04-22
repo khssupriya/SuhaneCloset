@@ -1,3 +1,6 @@
+<?php
+        session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +17,7 @@
 </head>
 <body>
 
-	<!-- -------- NavMenu Begins --------->
+		<!-- -------- NavMenu Begins --------->
 
 	<div id = "NavMenu">
 		<ul>
@@ -91,7 +94,30 @@
 	  <p>Customer Service Contact : <a href="mailto:customercare@Suhanescloset.com">customercare@Suhanescloset.com</a></p>
 	  <p>Suhane's Closet 2020. All Rights Reserved ®</p>
 	</footer>
+        
+        
+	<!-----------SCRIPT FOR MODAL --------->
 
+	<script type="text/javascript">
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		//var btn = document.getElementById("orderlinkbutn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		cart.onclick = function() {
+		  modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
 
 
 </body>
