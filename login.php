@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-
 <?php
 
 //if(isset($POST['submit'])){
@@ -28,31 +24,31 @@ $resultCheck = mysqli_num_rows($result);
 if($resultCheck > 0){
 	$flag = 0;
 	while($row = mysqli_fetch_assoc($result)){
-		if(($row['email'] == $email or $row['phone'] == $email) and $row['Pass'] == $pass){
+		if(($row['email'] == $email or $row['phone'] == $email) and $row['pass'] == $pass){
 			$flag = 1;
 			break;
 		}
 	}
 	if($flag == 1){
 		session_start();
-		$_SESSION['userid'] = $row['uid'];
-		header("location:index.php?login=success");
-		exit();
+		$_SESSION['userid'] = $row['id'];
+                echo"<script type=\"text/javascript\">
+                window.location.href = 'http://suhanescloset.atwebpages.com/PHP/index.php';
+                </script>" ;
 	}
 	else{
-		header("location:account.php?error=incorrectpassword&email=".$email);
-		exit();
+                echo"<script type=\"text/javascript\">
+                window.location.href = 'http://suhanescloset.atwebpages.com/PHP/account.php?IncorrectPassword';
+                </script>";
 	}
 
 }
 else{
-	header("location:account.php?error=incorrectemail");
-    exit();
+	echo"<script type=\"text/javascript\">
+                window.location.href = 'http://suhanescloset.atwebpages.com/PHP/account.php?IncorrectEmailId';
+                </script>";
 }
 
 mysqli_close($conn);
 //}
 ?>
-
-</body>
-</html>
