@@ -20,7 +20,7 @@ session_start();
 
 	<!-- -------- NavMenu Begins --------->
 
-	<div id = "NavMenu">
+		<div id = "NavMenu">
 		<ul>
 			<span id = "title">
 				<li><a href="index.php">Suhane's Closet</a></li>				
@@ -28,14 +28,17 @@ session_start();
 			<span id="NavLinks">
 				<?php
 					if(isset($_SESSION['userid'])){
-						echo '<li><a href="#cart" id = "cart"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></li>
+						echo '<li><a href="#cart"><i class="fa fa-shopping-cart" style="font-size:24px" id = "cart"></i></a></li>
 						<!-- The Modal -->
 						<div id="myModal" class="modal">
 
 						  <!-- Modal content -->
 						  <div class="modal-content">
 						    <span class="close">&times;</span>
-						    <p>hell this is moal</p>
+						    <h2 style="text-align:center;">Cart</h2>
+						    <form action="../PHP/logout.php" method="post">
+							    <button type="submit" id="logoutbtn">LogOut</button>
+							</form>
 						        
 						  </div>
 						   
@@ -46,8 +49,8 @@ session_start();
 					}
 
 				?>
-				<li><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="about.php">About</a></li>
+				<li><a href="contact.php">Contact</a></li>
 				<li><a href="index.php">Home</a></li>				
 			</span>
 		</ul>
@@ -121,6 +124,7 @@ session_start();
 	<!-- -------- Footer ends --------->
 
 
+	
 	<!-----------SCRIPT FOR MODAL --------->
 
 	<script type="text/javascript">
